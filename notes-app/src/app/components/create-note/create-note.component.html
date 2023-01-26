@@ -1,0 +1,14 @@
+<div class="alert alert-primary" role="alert">
+    <h1 class="alert-link">Create Note</h1>
+</div>
+<div>
+    <form>
+        <div>
+            <input type="text" id="title" [(ngModel)]="note.title" name="title" placeholder="Title"/>
+        </div>
+        <div>
+            <textarea id="description" [(ngModel)]="note.description" name="description" rows="10" cols="50"></textarea>
+        </div>
+        <button (click)="saveNote()" class="btn btn-block btn-primary mt-2">Save Note</button>
+    </form>
+</div>
